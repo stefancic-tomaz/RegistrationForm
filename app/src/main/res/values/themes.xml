@@ -1,0 +1,13 @@
+<resources>
+    <style name="Base.Theme.RegistrationForm" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/vijolicna</item>
+        <item name="colorOnPrimary">@color/bela</item>
+        <item name="colorSecondary">@color/vijolicna</item>
+        <item name="colorSurface">@color/ozadje</item>
+        <item name="android:colorBackground">@color/ozadje</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <style name="Theme.RegistrationForm" parent="Base.Theme.RegistrationForm" />
+</resources>

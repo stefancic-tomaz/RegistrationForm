@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Registration form</string>
+    <string name="naslov">Registration form</string>
+    <string name="uporabnik">Username</string>
+    <string name="ime">Full name</string>
+    <string name="drzava">Country</string>
+    <string name="email">Email</string>
+    <string name="telefon">Phone number</string>
+    <string name="geslo">Password</string>
+    <string name="spol">Gender</string>
+    <string name="moski">Male</string>
+    <string name="zenska">Female</string>
+    <string name="pogoji">Agree with Terms &amp; Conditions</string>
+    <string name="ustvari">Create account</string>
+    <string name="naslov_povzetka">Registration Details</string>
+    <string name="ni_izbran">Not selected</string>
+    <string name="da">Yes</string>
+    <string name="ne">No</string>
+    <string name="v_redu">OK</string>
+    <string name="povzetek">Username: %1$s\nName: %2$s\nCountry: %3$s\nEmail: %4$s\nPhone: %5$s\nPassword: %6$s\nGender: %7$s\nTerms Accepted: %8$s</string>
+</resources>

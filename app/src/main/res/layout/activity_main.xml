@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/glavno"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+    <ScrollView
+        android:id="@+id/obrazec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:accessibilityHeading="true"
+                android:text="@string/naslov"
+                android:textColor="@color/besedilo"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/uporabnik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:autofillHints="username"
+                android:hint="@string/uporabnik"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/ime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:minHeight="48dp"
+                android:autofillHints="name"
+                android:hint="@string/ime"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/drzava"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:minHeight="48dp"
+                android:autofillHints="postalAddressCountry"
+                android:hint="@string/drzava"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:minHeight="48dp"
+                android:autofillHints="emailAddress"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/telefon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:minHeight="48dp"
+                android:autofillHints="phone"
+                android:hint="@string/telefon"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:nextFocusForward="@id/geslo"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:labelFor="@id/spol"
+                android:text="@string/spol"
+                android:textColor="@color/besedilo"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/spol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/moski"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/moski" />
+
+                <RadioButton
+                    android:id="@+id/zenska"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:minHeight="48dp"
+                    android:text="@string/zenska" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/geslo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:minHeight="48dp"
+                android:autofillHints="newPassword"
+                android:hint="@string/geslo"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+            <CheckBox
+                android:id="@+id/pogoji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:minHeight="48dp"
+                android:text="@string/pogoji" />
+
+            <Button
+                android:id="@+id/ustvari"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:minHeight="48dp"
+                android:text="@string/ustvari"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
