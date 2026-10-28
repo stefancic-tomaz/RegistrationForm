@@ -16,7 +16,7 @@ Projekt je bil razvit v okolju Android Studio kot del šolske naloge pri predmet
 
 ### Registracijski obrazec
 
-![RegistrationForm - registracijski obrazec](screenshots/registration-form.png)
+<img src="screenshots/registration-form.png" width="300" alt="Registracijski obrazec">
 
 ## Uporabljene tehnologije
 
